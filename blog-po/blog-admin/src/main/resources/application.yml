@@ -1,0 +1,27 @@
+#server
+server:
+  port: 8889
+#数据库
+spring:
+  application:
+    name: watermelonhit_blog_admin
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    username: root
+    password: sus608532
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 112.74.190.84
+    port: 6385
+    password: "Sus985211"
+#mybatis-plus
+mybatis-plus:
+  configuration: #打印日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix: ms_
+
+qiniu:
+  accessKey: gNUWKlZmhyB5uNp3CKaRI45-XMbtvwrsAKRUii4k
+  accessSecretKey: CCGr0gmhIQk0dMihAv45ttposH4d3zMjCD32GSby
